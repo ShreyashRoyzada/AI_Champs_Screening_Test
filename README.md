@@ -12,4 +12,16 @@ The Problem statement consisted of 4 Tasks to be finished. These Tasks are descr
 
 ## TASK 1.
 
-Completed the first task on 24/08/20 and added the files to the repo. Please find the 50 LinkedIn Profiles in the Task 1 Folder in .pdf format. These were manually collected from LinkedIn and no bot/scrapper was used in the collection process.
+Completed the Task 1 on 24/08/20 and added the files to the repo. Please find 51 LinkedIn Profiles in the Task 1 Folder in .pdf format. These were manually collected from LinkedIn and no bot/scrapper was used in the collection process.
+
+## TASK 2.
+
+Completed the Task 2 on 25/08/20 and added the files to the repo. The Files added were-
+* PDF Converter.py
+* Task2.csv
+* trail1.csv
+* trial2.csv
+* trial3.csv
+
+Among these files the **final submissions are the _PDF Converter.py_  and _Task2.csv_.** 
+The other files are the files I created while debugging my code.
