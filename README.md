@@ -17,11 +17,11 @@ Completed the Task 1 on 24/08/20 and added the files to the repo. Please find 51
 ## TASK 2.
 
 Completed the Task 2 on 25/08/20 and added the files to the repo. The Files added were-
-* PDF Converter.py
+* PDFConverter.py
 * Task2.csv
 * trail1.csv
 * trial2.csv
 * trial3.csv
 
-Among these files the **final submissions are the _PDF Converter.py_  and _Task2.csv_.** 
-The other files are the files I created while debugging my code.
+Among these files the **final submissions are _PDF Converter.py_  and _Task2.csv_.** 
+The other files are the files created while debugging my code.
