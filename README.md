@@ -46,4 +46,4 @@ Added part (a) of Task 4 on 28/08/20 to the repository. the app.py file is the m
 
 * Flask API 1
 
-It contains the env(environment) folder, the Static Folder and the templates folder. It also contains the main app.py file which is the driver code.
+It contains the env(environment) folder, the Static Folder and the templates folder. It also contains the main app.py file which is the driver code. For running the file create a virtual environment in VS Code. Also add a Static folder in the Flask API 1 Folder.( It was not uploading on github as it was an emplty folder) This is used for storing the file before processing it and is cleaned after the processing is finished. Run the file using _python app.py_ command.
