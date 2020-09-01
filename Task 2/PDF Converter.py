@@ -11,7 +11,9 @@ from collections import namedtuple
 
 Line = namedtuple('Line','S_no Text')
 
-os.chdir('E:\Internsips\AIChamps\AI Champs Screening Test\Task 1\Linkedin Profiles Pdfs')
+comdir=os.path.normpath(os.getcwd()+os.sep+os.pardir)
+
+os.chdir(comdir+"/Task 1/Linkedin Profiles Pdfs")
 i=1
 lines= []
 for items in os.listdir():
@@ -21,13 +23,11 @@ for items in os.listdir():
             text=''
             for page in pdf.pages:
                 text=text+page.extract_text()
-                
+
             lines.append(Line(i,text))
             i=i+1
 
-os.chdir('E:\Internsips\AIChamps\AI Champs Screening Test\Task 2')
+os.chdir(comdir+"\Task 2")
 df = pd.DataFrame(lines)
 
 df.to_csv('Task2.csv',index=False)
-
- 

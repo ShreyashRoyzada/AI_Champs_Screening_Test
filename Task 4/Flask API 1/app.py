@@ -23,7 +23,8 @@ def uploader():
         f= request.files['file1'] 
         f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename)))
         Line = namedtuple('Line','S_no Text')
-    os.chdir('E:\Internsips\AIChamps\AI Champs Screening Test\Task 4\Flask API 1\Static')
+    comdir = os.path.normpath(os.getcwd() + os.sep + os.pardir)
+    os.chdir(comdir+"/Flask API 1/Static")
     i=1 
     lines= []
     for items in os.listdir():
@@ -37,14 +38,15 @@ def uploader():
                 lines.append(Line(i,text))
                 i=i+1
     
+    
     j=json.dumps(lines)
-    folder = 'E:\Internsips\AIChamps\AI Champs Screening Test\Task 4\Flask API 1\Static'
+    folder = comdir+"/Flask API 1/Static"
     for filename in os.listdir(folder):
         file_path = os.path.join(folder, filename)
         if os.path.isfile(file_path) or os.path.islink(file_path):
             os.unlink(file_path)
         elif os.path.isdir(file_path):
-            shutil.rmtree(file_path)
+            shutil.rmtree(file_path)   
     return j
 
 app.run(debug=True)
